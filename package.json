@@ -1,0 +1,17 @@
+{
+  "name": "haddocker",
+  "version": "0.0.0",
+  "description": "",
+  "main": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Antti Mattila",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "~3.8.9",
+    "gulp-webserver": "~0.8.4",
+    "gulp-sass": "~1.2.2",
+    "gulp-autoprefixer": "~1.0.1"
+  }
+}

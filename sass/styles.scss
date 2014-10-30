@@ -1,0 +1,77 @@
+$color-bg: #d35400;
+$color-highlight: #3498db;
+
+body {
+  background: $color-bg;
+  font-family: 'Permanent Marker', sans-serif;
+  text-align: center;
+  color: white;
+}
+
+h1 {
+  font-size: 3em;
+  font-weight: normal;
+}
+
+textarea {
+  padding: 0.6em;
+  margin-bottom: 1em;
+  border-radius: 5px;
+  border: 10px solid darken($color-bg, 10%);
+  background: rgba(255,255,255,0.7);
+  font-size: 1.2em;
+  transition: 0.2s all;
+  max-width: 100%;
+
+  &:hover {
+    border-color: darken($color-bg, 5%);
+  }
+
+  &:focus {
+    outline: none;
+    background: rgba(255,255,255,0.9);
+    border-color: darken($color-bg, 5%);
+  }
+}
+
+#canvas {
+  display: block;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto 1.7em auto;
+}
+
+#download {
+  display: inline-block;
+  position: relative;
+  background: $color-highlight;
+  padding: 10px 20px 10px 50px;
+  border-radius: 2px;
+  color: white;
+  font-size: 120%;
+  text-decoration: none;
+  cursor: pointer;
+  box-shadow: 0 2px 0 rgba(0,0,0,0.3);
+  transition: 0.2s background;
+
+  &:hover {
+  background: lighten($color-highlight, 5%);
+  }
+
+  &:active {
+    box-shadow: 0 0 0 transparent;
+    top: 2px;
+  }
+
+  &:before {
+    content: "";
+    background: url("../img/Captain-Haddock.png");
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 8px;
+    top: 8px;
+    background-size: 30px 30px;
+  }
+}
