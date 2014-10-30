@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function() {
   initQuotes(quotes, header, download);
 
   var haddock = new Image();
-  haddock.src = '../img/empty-haddock.png';
+  haddock.src = 'img/empty-haddock.png';
 
   haddock.addEventListener('load', function() {
     canvas.drawImage(haddock, 0, 0);
