@@ -25,4 +25,17 @@ gulp.task('server', function() {
 });
 
 gulp.task('default', ['sass', 'watch', 'server'], function() {});
-gulp.task('build', ['sass'], function() {});
+
+var dist = {
+	files: [
+		'css/**/*.*',
+		'js/**/*.*',
+		'index.html'
+	],
+	dest: 'dist'
+};
+
+gulp.task('build', ['sass'], function() {
+	return gulp.src(dist.files, { base: '.' })
+		.pipe(gulp.dest(dist.dest));
+});
