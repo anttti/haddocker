@@ -30,6 +30,7 @@ var dist = {
 	files: [
 		'css/**/*.*',
 		'js/**/*.*',
+		'img/**/*.*/',
 		'index.html'
 	],
 	dest: 'dist'
