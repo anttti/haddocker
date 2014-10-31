@@ -1,7 +1,7 @@
 var $ = document.querySelector.bind(document);
 
 var initQuotes = function(quotes, header, download) {
-  download.text = "Save it, you... " + quotes[Math.floor(Math.random() * quotes.length)];
+  download.textContent = "Save it, you... " + quotes[Math.floor(Math.random() * quotes.length)];
   header.innerHTML = quotes[Math.floor(Math.random() * quotes.length)];
 }
 
